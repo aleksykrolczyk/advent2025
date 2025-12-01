@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:advent2025}",
+      "name": "Debug advent2024",
+      "preLaunchTask": "swift: Build Debug advent2024",
+      "target": "advent2024",
+      "configuration": "debug"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:advent2025}",
+      "name": "Release advent2024",
+      "preLaunchTask": "swift: Build Release advent2024",
+      "target": "advent2024",
+      "configuration": "release"
+    }
+  ]
+}
