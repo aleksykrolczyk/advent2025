@@ -40,12 +40,13 @@ class Day01: AdventDay {
                     position = 0
                 }
                 if position == -1 {
-                    position = 99
+                    position = 9
                 }
                 if position == 0 {
                     zerosCount += 1
                 }
             }
+            print(position)
 
         }
         return zerosCount

@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "advent2024",
+  name: "advent2025",
   platforms: [.macOS("13.0")],
   dependencies: [
     .package(url: "https://github.com/twostraws/SwiftGD", from: "2.5.0"),
@@ -18,7 +18,7 @@ let package = Package(
     // Targets are the basic building blocks of a package, defining a module or a test suite.
     // Targets can depend on other targets in this package and products from dependencies.
     .executableTarget(
-      name: "advent2024",
+      name: "advent2025",
       dependencies: [
         "SwiftGD",
         .product(name: "Collections", package: "swift-collections"),

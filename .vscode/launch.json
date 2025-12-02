@@ -19,6 +19,26 @@
       "preLaunchTask": "swift: Build Release advent2024",
       "target": "advent2024",
       "configuration": "release"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:advent2025}",
+      "name": "Debug advent2025",
+      "target": "advent2025",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug advent2025"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:advent2025}",
+      "name": "Release advent2025",
+      "target": "advent2025",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release advent2025"
     }
   ]
 }
