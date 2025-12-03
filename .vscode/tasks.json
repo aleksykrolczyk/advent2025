@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "swift",
+			"args": [
+				"build",
+				"--product",
+				"advent2025"
+			],
+			"env": {},
+			"cwd": "/Users/akrolczyk/Developer/advent2025",
+			"disableTaskQueue": true,
+			"dontTriggerTestDiscovery": true,
+			"group": "build",
+			"problemMatcher": [],
+			"label": "swift: Build Debug advent2025",
+			"detail": "swift build --product advent2025"
+		}
+	]
+}

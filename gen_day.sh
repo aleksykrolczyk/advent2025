@@ -1,8 +1,12 @@
 #! /bin/bash
 
-dataFile="./Sources/data/day${1}.txt"
-codeFile="./Sources/days/day${1}.swift"
-code="class Day${1}: AdventDay {
+dayNum=$1
+
+mainFile="./Sources/main.swift"
+
+dataFile="./Sources/data/day${dayNum}.txt"
+codeFile="./Sources/days/day${dayNum}.swift"
+code="class Day${dayNum}: AdventDay {
 
     func part1() -> Any {
         return \"\"
@@ -26,4 +30,9 @@ else
     touch "$codeFile"
     echo "$code" > "$codeFile"
     echo "code file $codeFile created"
+fi
+
+if [ -f "$mainFile" ]; then
+    sed -i "" "s/let day: AdventDay = Day[0-9][0-9]()/let day: AdventDay = Day${dayNum}()/g" "$mainFile"
+    echo "updated main.swift to use Day${dayNum}"
 fi
