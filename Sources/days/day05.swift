@@ -47,7 +47,6 @@ func simplifyRanges<T: Comparable>(ranges: inout [ClosedRange<T>]) -> [ClosedRan
     }
     for i in 0..<ranges.count - 1 {
         for j in (i + 1)..<ranges.count {
-            print(i, j)
             if ranges[i].overlaps(ranges[j]) {
                 let newRange = ClosedRange(
                     uncheckedBounds: (
