@@ -1,6 +1,6 @@
 class Day04: AdventDay {
 
-    func getGrid() -> [[Tile]] {
+    private func getGrid() -> [[Tile]] {
         return Self.dataLines.map { line in
             return line.map({ $0 == "." ? .empty : .paper })
         }
@@ -79,7 +79,7 @@ class Day04: AdventDay {
     }
 }
 
-enum Tile: CustomStringConvertible {
+private enum Tile: CustomStringConvertible {
     case empty, paper, accessible
 
     var description: String {
